@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  color: #00ff88;
+}
+
+#sorunListesi div {
+  background: #1e1e1e;
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#sorunListesi div:hover {
+  background: #333;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+}
