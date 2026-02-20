@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "baslik": "Bilgisayar Açılmıyor",
+    "kategori": "Donanım",
+    "icerik": "1. Güç kablosunu kontrol et.\n2. PSU çalışıyor mu kontrol et.\n3. RAM'leri çıkar tak."
+  },
+  {
+    "id": 2,
+    "baslik": "Mavi Ekran Hatası",
+    "kategori": "Yazılım",
+    "icerik": "1. Son yüklenen driver'ı kaldır.\n2. Windows güncellemelerini kontrol et.\n3. RAM testi yap."
+  },
+  {
+    "id": 3,
+    "baslik": "WiFi Bağlanmıyor",
+    "kategori": "İnternet",
+    "icerik": "1. Modemi yeniden başlat.\n2. Ağ ayarlarını sıfırla.\n3. Driver güncelle."
+  }
+]
