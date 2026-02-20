@@ -4,28 +4,38 @@ async function loadSorunlar() {
 
   const listContainer = document.getElementById("sorunListesi");
   const searchInput = document.getElementById("search");
+  const searchForm = document.getElementById("searchForm");
 
+  // Liste sayfası
   if (listContainer) {
+
     function renderList(filter = "") {
       listContainer.innerHTML = "";
-      data
-        .filter(item =>
-          item.baslik.toLowerCase().includes(filter.toLowerCase())
-        )
-        .forEach(item => {
-          const div = document.createElement("div");
-          div.innerHTML = `<strong>${item.baslik}</strong><br><small>${item.kategori}</small>`;
-          div.onclick = () => {
-            window.location.href = `makale.html?id=${item.id}`;
-          };
-          listContainer.appendChild(div);
-        });
+
+      const filtered = data.filter(item =>
+        item.baslik.toLowerCase().includes(filter.toLowerCase())
+      );
+
+      if (filtered.length === 0) {
+        listContainer.innerHTML = "<p>Sonuç bulunamadı.</p>";
+        return;
+      }
+
+      filtered.forEach(item => {
+        const div = document.createElement("div");
+        div.innerHTML = `<strong>${item.baslik}</strong><br><small>${item.kategori}</small>`;
+        div.onclick = () => {
+          window.location.href = `makale.html?id=${item.id}`;
+        };
+        listContainer.appendChild(div);
+      });
     }
 
     renderList();
 
-    searchInput.addEventListener("input", e => {
-      renderList(e.target.value);
+    searchForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      renderList(searchInput.value);
     });
   }
 
