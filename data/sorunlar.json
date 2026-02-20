@@ -3,18 +3,140 @@
     "id": 1,
     "baslik": "Bilgisayar Açılmıyor",
     "kategori": "Donanım",
-    "icerik": "1. Güç kablosunu kontrol et.\n2. PSU çalışıyor mu kontrol et.\n3. RAM'leri çıkar tak."
+    "seviye": "Kritik",
+    "cozum": "Güç kablosunu, priz bağlantısını ve PSU anahtarını kontrol edin. Farklı priz deneyin. RAM'leri çıkarıp tekrar takın."
   },
   {
     "id": 2,
-    "baslik": "Mavi Ekran Hatası",
-    "kategori": "Yazılım",
-    "icerik": "1. Son yüklenen driver'ı kaldır.\n2. Windows güncellemelerini kontrol et.\n3. RAM testi yap."
+    "baslik": "Mavi Ekran (BSOD)",
+    "kategori": "Sistem",
+    "seviye": "Kritik",
+    "cozum": "Son yüklenen sürücüleri kaldırın. RAM testi yapın. Windows Güncellemelerini kontrol edin."
   },
   {
     "id": 3,
+    "baslik": "Bilgisayar Çok Yavaş",
+    "kategori": "Performans",
+    "seviye": "Orta",
+    "cozum": "Görev Yöneticisi'nden başlangıç programlarını kapatın. Disk temizleme yapın. SSD kullanın."
+  },
+  {
+    "id": 4,
     "baslik": "WiFi Bağlanmıyor",
-    "kategori": "İnternet",
-    "icerik": "1. Modemi yeniden başlat.\n2. Ağ ayarlarını sıfırla.\n3. Driver güncelle."
+    "kategori": "Ağ",
+    "seviye": "Orta",
+    "cozum": "Modemi yeniden başlatın. Ağ sürücüsünü güncelleyin. DNS ayarlarını sıfırlayın."
+  },
+  {
+    "id": 5,
+    "baslik": "Oyunlarda FPS Düşüşü",
+    "kategori": "Performans",
+    "seviye": "Orta",
+    "cozum": "Ekran kartı sürücüsünü güncelleyin. Arka plan uygulamalarını kapatın. Grafik ayarlarını düşürün."
+  },
+  {
+    "id": 6,
+    "baslik": "SSD Görünmüyor",
+    "kategori": "Donanım",
+    "seviye": "Kritik",
+    "cozum": "BIOS'ta disk kontrolü yapın. SATA kablosunu değiştirin. Disk Yönetimi'nden sürücü harfi atayın."
+  },
+  {
+    "id": 7,
+    "baslik": "CPU Sıcaklığı 90°C Üstü",
+    "kategori": "Donanım",
+    "seviye": "Kritik",
+    "cozum": "Termal macunu yenileyin. Fanları temizleyin. Kasa hava akışını iyileştirin."
+  },
+  {
+    "id": 8,
+    "baslik": "USB Portları Çalışmıyor",
+    "kategori": "Donanım",
+    "seviye": "Orta",
+    "cozum": "Aygıt Yöneticisi'nden USB sürücülerini kaldırıp yeniden başlatın. BIOS ayarlarını kontrol edin."
+  },
+  {
+    "id": 9,
+    "baslik": "Windows Güncelleme Hatası 0x80070057",
+    "kategori": "Sistem",
+    "seviye": "Orta",
+    "cozum": "Windows Update sorun gidericisini çalıştırın. SoftwareDistribution klasörünü sıfırlayın."
+  },
+  {
+    "id": 10,
+    "baslik": "Disk %100 Kullanım",
+    "kategori": "Performans",
+    "seviye": "Kritik",
+    "cozum": "Superfetch servisini devre dışı bırakın. Disk sağlığını kontrol edin. Virüs taraması yapın."
+  },
+  {
+    "id": 11,
+    "baslik": "BIOS Açılmıyor",
+    "kategori": "Donanım",
+    "seviye": "Kritik",
+    "cozum": "CMOS pili çıkarıp 5 dakika bekleyin. Farklı klavye deneyin. Anakart jumper reset yapın."
+  },
+  {
+    "id": 12,
+    "baslik": "Ekran Sinyal Yok",
+    "kategori": "Donanım",
+    "seviye": "Kritik",
+    "cozum": "HDMI/DP kablosunu değiştirin. RAM'leri yeniden takın. Harici ekran kartı varsa çıkarıp test edin."
+  },
+  {
+    "id": 13,
+    "baslik": "Fanlar Çok Gürültülü",
+    "kategori": "Donanım",
+    "seviye": "Düşük",
+    "cozum": "Fan temizliği yapın. Fan eğrisi ayarlarını BIOS'tan düzenleyin."
+  },
+  {
+    "id": 14,
+    "baslik": "Laptop Şarj Olmuyor",
+    "kategori": "Donanım",
+    "seviye": "Kritik",
+    "cozum": "Adaptör kontrolü yapın. Batarya çıkarılabiliyorsa çıkarıp test edin. Güç soketini kontrol edin."
+  },
+  {
+    "id": 15,
+    "baslik": "Tarayıcı Kendiliğinden Kapanıyor",
+    "kategori": "Yazılım",
+    "seviye": "Orta",
+    "cozum": "Eklentileri devre dışı bırakın. Tarayıcıyı sıfırlayın. RAM kullanımını kontrol edin."
+  },
+  {
+    "id": 16,
+    "baslik": "Dosyalar Siliniyor / Kayboluyor",
+    "kategori": "Güvenlik",
+    "seviye": "Kritik",
+    "cozum": "Virüs taraması yapın. Disk sağlığını kontrol edin. Yedekleme sisteminizi gözden geçirin."
+  },
+  {
+    "id": 17,
+    "baslik": "Bilgisayar Kendi Kendine Yeniden Başlıyor",
+    "kategori": "Donanım",
+    "seviye": "Kritik",
+    "cozum": "PSU test edin. RAM testi yapın. CPU sıcaklığını kontrol edin."
+  },
+  {
+    "id": 18,
+    "baslik": "Mikrofon Çalışmıyor",
+    "kategori": "Aygıt",
+    "seviye": "Düşük",
+    "cozum": "Ses ayarlarından giriş cihazını kontrol edin. Sürücü güncelleyin."
+  },
+  {
+    "id": 19,
+    "baslik": "Ekran Titriyor",
+    "kategori": "Görüntü",
+    "seviye": "Orta",
+    "cozum": "Yenileme hızını kontrol edin. Kabloyu değiştirin. GPU sürücüsünü güncelleyin."
+  },
+  {
+    "id": 20,
+    "baslik": "Klavyede Bazı Tuşlar Çalışmıyor",
+    "kategori": "Aygıt",
+    "seviye": "Düşük",
+    "cozum": "Farklı USB port deneyin. Klavye temizliği yapın. Sürücüleri yeniden yükleyin."
   }
 ]
